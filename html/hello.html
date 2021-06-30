@@ -1,17 +1,39 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .test {
+            width: 400px;
+            height: 100px;
+            background: red;
+            /*此处写代码*/
+            position: fixed;
+            top: 0;
+            left: 50%;
+            margin-left: -200px;
+
+        }
+
+        .out {
+            width: 100%;
+            height: 2000px;
+            background-color: #abcdef;
+        }
+    </style>
 </head>
+
 <body>
-        <a name="top">这里是顶部</a><br />
-        <!--设置水果锚点链接-->
-        <a href="./imooc.html#fruit">水果</a>
-        <!--设置蔬菜锚点链接-->
-        <a href="./imooc.html#vagetable">蔬菜</a>
-        <!--设置运动锚点链接-->
-        <a href="./imooc.html#sport">运动</a>
+    <div class="out">
+        <div class="test"></div>
+    </div>
 </body>
+
 </html>
