@@ -7,14 +7,9 @@ body{
     width: 1200px;
     margin:20px auto;
 }
-.box1{
-    /* background-color: red; */
-}
-.box2{
-    /* background-color: blue; */
-}
+
 .box3{
-    background-color:aqua;
+    background-color:#07cbc9;
 }
 
 /* header区域 */
@@ -22,7 +17,7 @@ header{
         height: 100px;
         overflow: hidden;
         position:relative;
-    background-color: rgb(44,194,189);
+    background-color: #07cbc9;
 
 }
 .log{
@@ -81,7 +76,7 @@ header{
 .form input:first-child{
     margin-top:100px;
 }
-.form  input{
+.form  input, .form textarea{
     display: block;
     width:504px;
     height: 40px;
@@ -91,33 +86,25 @@ header{
     border: 2px solid #808080;
 
 }
-.form  textarea{
-    display:block;
-    width: 504px;
-    height:110px;
-    margin:20px auto;
-    color:#808080;
-    background-color: transparent;
-    border: 2px solid #808080;
+.form input::placeholder, .form textarea::placeholder{
+    color:rgba(245, 245, 245, 0.623);
 }
-
+.form  textarea{
+    height:110px;
+}
 .form  input:last-child{
     width:200px;
     height: 40px;
-    color:#a8a7a7;
+    color:rgba(245, 245, 245, 0.623);
     font: bold 16px/1.5 Arial;
 }
 
 .form  input:last-child:hover{
     background-color: gold;
+    color:tomato
 }
 
 /* about上部分 */
-.about{
-}
-.part1{
-    /* background-color: yellow; */
-}
 .part1 .title{
     text-align: center;
     font: bold 32px/1.5 'Courier New', Courier, monospace;
@@ -137,25 +124,25 @@ header{
     margin: 0 auto;
 }
 /* about下部分 */
-.part2{
+.about .part2{
     /* background-color: pink; */
     /* overflow: hidden; */
     height: 465px;
 }
 
-.part2 .a-left{
+.about .part2 .a-left{
     float:left;
     width: 275px;
     /* background-color: red; */
 }
 
-.part2 .a-left .title{
+.about .part2 .a-left .title{
     width: 200px;
     text-align: left;
     font: bold 32px/1.5 'Courier New', Courier, monospace;
     margin-top:30px;
 }
-.part2 .a-left .desc{
+.about .part2 .a-left .desc{
     position: absolute;
     width: 300px;
     height: 150px;
@@ -165,7 +152,7 @@ header{
     background-color: rgba(255,255,255,0.5);
 }
 
-.part2 .a-left .desc  a{
+.about .part2 .a-left .desc  a{
     width:100px;
     height: 40px;
     display: block;
@@ -175,36 +162,34 @@ header{
     color:white;
     background-color:black;
 }
-.part2 .a-left .desc  a:hover{
+.about .part2 .a-left .desc  a:hover{
     background-color:gold;
 }
 
-.part2 .a-center{
+.about .part2 .a-center{
     float:left;
     margin-top:30px
 }
-.part2 .a-right{
+.about .part2 .a-right{
     float:right;
     margin-top:30px;
     width: 260px;
 }
-.part2 .a-right ul{
 
-}
-.part2 .a-right ul li{
+.about .part2 .a-right ul li{
     float:right;
     list-style: none;
     text-align: center;
     width:250px;
     height:160px;
-    border: 2px solid rgb(44,194,189);
+    border: 2px solid #07cbc9;
     margin-bottom: 30px;
 }
-.part2 .a-right ul li .num{
+.about .part2 .a-right ul li .num{
     margin-top:40px;
     font: bold 26px/1.5 'Courier New', Courier, monospace;
 }
-.part2 .a-right ul li div{
+.about .part2 .a-right ul li div{
     font-family: 'Courier New', Courier, monospace;
 }
 /* 图文混排区 */
@@ -216,7 +201,7 @@ header{
     width:25%;
     height: 300px;
     float:left;
-    background-color: rgb(44,194,189);
+    background-color: #07cbc9;
     /* 清除浮动 */
     overflow: hidden;
     /* text-align: center; */
@@ -254,4 +239,47 @@ header{
     margin-bottom: 40px;
 }
 /* gallary区域 */
+.gallery .part2{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.gallery .part2 dl{
+    width: 360px;
+    height: 290px;
+    float:left;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+.gallery .part2 dl:nth-child(3),.part2 dl:nth-child(6){
+    margin-right: 0;
+}
+.gallery .part2 dl dt{
+    height: 240px;
+}
+.gallery .part2 dl dd{
+    height: 50px;
+    background-color: black;
+    color:whitesmoke;
+    font: bold 16px/50px Aria;
+}
+/* footer区域 */
+footer{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #07cbc9;
+}
+footer p{
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    /* background: red; */
+    top:50%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -300px;
+    text-align: center;
+    line-height: 30px;
+}
+
 
