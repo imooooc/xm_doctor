@@ -13,12 +13,43 @@
         }
 
         .box {
-            width: 400px;
-            height: 400px;
+            width: 500px;
+            height: 182px;
             margin: 300px auto;
             border: 1px solid #000;
+            position: relative;
         }
-
+        @keyframes shanshuo {
+            from{
+                opacity: 1;
+            }
+            to{
+                opacity: 0;
+            }
+        }
+        .box::before{
+            content: '鼠标指针放在跑道上开始竞赛';
+            position: absolute;
+            display: block;
+            width: 500px;
+            height: 100px;
+            top:-100px;
+            left:50%;
+            text-align: center;
+            margin-left:-250px;
+            opacity: 1;
+            animation:shanshuo 1s linear  0s 4  alternate   ;
+        }
+        .box::after{
+            display: block;
+            position: absolute;
+            top:0%;
+            right:80px;
+            content: '';
+            width: 0px;
+            height: 182px;
+            border-right: 5px dashed red;
+        }
         p {
             width: 20px;
             height: 20px;
@@ -28,32 +59,32 @@
         }
 
         .box:hover p:nth-child(1) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s ease-in 0s;
         }
 
         .box:hover p:nth-child(2) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s ease-out 0s;
         }
 
         .box:hover p:nth-child(3) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s linear 0s;
         }
 
         .box:hover p:nth-child(4) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s ease-in-out 0s;
         }
 
         .box:hover p:nth-child(5) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s cubic-bezier(.14, 1.19, .56, 1.4) 0s;
         }
 
         .box:hover p:nth-child(6) {
-            transform: translate(200px);
+            transform: translate(400px);
             transition: transform 1s ease-in 0s;
         }
     </style>
